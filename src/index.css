@@ -1,13 +1,334 @@
-body {
+/* Font for my clock */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app {
+  background-color: #195de1 ;
+  width: 1440px;
+  min-height: 1400px;
+  margin: auto;
+  font-family: 'Courier New', Courier, monospace;
+  border: 5px solid black;
 }
+
+.bottom {
+  position: fixed;
+  bottom: 0;
+}
+/* links */
+a:link{
+  text-decoration: none;
+  color: black;
+}
+
+a:visited{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  text-decoration: none;
+  color: white;
+}
+
+/* For my clock app -----------------------------------------------------------*/
+.clockBacking {
+  background-color: lightgray;
+  width: 100%;
+  height: 1400px;
+}
+
+.digitalClock {
+    margin: auto;
+    width: 80%;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    color: green; 
+    background-color: black; 
+    text-align: center; 
+    padding: 20px; 
+    border: 5px solid green; 
+    border-radius: 16px; 
+}
+#timezone {
+    margin: 20px auto;
+    display: block;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    color: green; 
+    background-color: black; 
+    padding: 10px; 
+    border: 5px solid green; 
+    border-radius: 16px; 
+    cursor: pointer;
+}
+
+#clockHeading {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    color: green; 
+    background-color: black; 
+    text-align: center; 
+    padding: 20px; 
+    border: 5px solid green; 
+    border-radius: 16px; 
+    margin-bottom: 20px;
+}
+
+/* MyProjectsBar* -------------------------------------------------------------*/
+
+.myProjects {
+  width: 100%;
+  height: 100px;
+  background-color: #93d4f0;
+  border: 8px solid black;
+  text-align: center;
+  font-size: 40px;
+}
+
+/* AboutMeBar ----------------------------------------------------------------- */
+.aboutMe {
+  width: 1438px;
+  height: 100px;
+  background-color: #93d4f0;
+  border: 8px solid black;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 120px;
+}
+/* ProjectLinkBoxes stylings --------------------------------------------------*/
+
+.projectsContainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: 1075px;
+  width: 1100px;
+  margin: auto;
+}
+
+.projectBox {
+  height: 500px;
+  width: 400px;
+  background-color: white;
+  border: 5px solid black;
+  box-sizing: border-box;
+  position: relative;
+  margin-top: 60px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  
+}
+ .projectBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+ }
+
+.projectBox .projectTitle {
+  height: 75px;
+  background-color: #93d4f0;
+  font-size: 32px;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: solid 5px black;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+/* NL Quiz -------------------------------------------------------------------- */
+.quizBacking {
+  background-color: white;
+  width: 100%;
+  min-height: 1400px;
+}
+
+#title {
+  text-align: center;
+  font-size: 40px;
+  color: blue;
+  margin-bottom: 20px;
+}
+.quiz-container {
+  width: 75%;
+  margin: auto;
+  padding: 20px;
+  height: 100%;
+}
+#quiz {
+  background-color: lightblue;
+  padding: 10px;
+  border: 8px solid yellow;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+label {
+  display: block;
+  margin: 20px;
+}
+button {
+  display: block;
+  margin: auto;
+  width: 200px;
+  height: 100px;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: gold;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: 30px;
+}
+#results {
+  text-align: center;
+  font-size: 40px;
+  color: blue;
+  margin-top: 20px;
+  background-color: yellow;
+  border: 5px solid black;
+  
+}
+
+/* Bitcoin tracker */
+.bitcoinBacking {
+  background-color: white;
+  width: 100%;
+  min-height: 1400px;
+}
+.button {
+  background-color: #4CAF50;
+  border: 5px solid black;
+  margin:20px;
+  width: 400px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 32px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+#bitcoinValue {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 15px;
+  border: 5px solid black;
+  width: 50%;
+  border-radius: 16px;
+  margin: 20px;
+  background-color: lightyellow;
+
+}
+
+#success {
+  background-color: lightgreen;
+  width: 50%;
+  border: 2px solid black;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 15px;
+  margin: 20px;
+}
+#error {
+  background-color: lightcoral;
+  width: 50%;
+  border: 2px solid black; 
+  font-size: 16px;
+  font-weight: bold; 
+  padding: 15px;  
+  margin: 20px;
+}
+
+/* AboutMeBoxes */
+
+.aboutMeBoxesContainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 1075px;
+  width: 800px;
+  margin: auto;
+  margin-top: 40px; 
+} 
+
+.photoBox {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 350px;
+  width: 350px;
+  background-color: white; 
+  border: 5px solid black;
+  margin: auto;
+
+}
+
+.photoBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.aboutMeSocial {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  height: 100px;
+  width: 350px;
+  margin: auto;
+}
+
+.aboutMeSocial img {
+  width: 100px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.aboutMeTextContainer {
+  width: 700px;
+  height: 400px;
+  background-color: #93d4f0;
+  margin: auto;
+  display: flex;
+  border-radius: 24px;
+  border: solid 5px black;
+}
+
+.aboutMeTextBox {
+  margin:auto;
+  width: 600px;
+  height: 300px;
+  background-color: white;
+  border: solid 5px black;
+  border-radius: 24px;
+  padding: 20px;
+  font-size: 24px;
+  word-wrap: break-word;
+  white-space: normal;
+  font-weight: bolder;
+}
+
+.aboutMeTextBox h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 5px;
+  text-decoration: underline;
+}
+
+
