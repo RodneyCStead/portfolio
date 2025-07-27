@@ -18,9 +18,11 @@ const AboutMeBoxes = () => {
           <div className = "aboutMeTextBox">
             <h2>About Me</h2>
             <p>
-              Hi! my name is Rodney Stead. I am currently a student with Keyin College 
-              enrolled in their Software Development program. As a student, I have learned 
-              python, html, css, javascript. I am currently learning React and this is my first solo project.
+              Hi! my name is Rodney Stead. I am a recent graduate of Keyin College's
+              Software Development program. As a student, I learned
+              python, html, css, javascript as well as postgresql and MySql database tools. I am currently looking to expand my knowledge
+              and put use to what I know into practice with a company that is as passionate about technology as I am.
+              Thanks for viewing my profile and I look forward to hearing from you!.
             </p>
           </div>
         </div>
