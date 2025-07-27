@@ -307,10 +307,13 @@ button {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
-  height: 1075px;
+  min-height: 1075px;
   width: 800px;
+  max-width: 95vw;
   margin: auto;
   margin-top: 40px; 
+  padding: 0 10px;
+  box-sizing: border-box;
 } 
 
 .photoBox {
@@ -348,18 +351,21 @@ button {
 
 .aboutMeTextContainer {
   width: 700px;
-  height: 400px;
+  max-width: 100%;
+  min-height: 400px;
   background-color: #93d4f0;
   margin: auto;
   display: flex;
   border-radius: 24px;
   border: solid 5px black;
+  box-sizing: border-box;
 }
 
 .aboutMeTextBox {
-  margin:auto;
+  margin: auto;
   width: 600px;
-  height: 300px;
+  max-width: calc(100% - 40px);
+  min-height: 300px;
   background-color: white;
   border: solid 5px black;
   border-radius: 24px;
@@ -368,6 +374,8 @@ button {
   word-wrap: break-word;
   white-space: normal;
   font-weight: bolder;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
 }
 
 .aboutMeTextBox h2 {
@@ -375,6 +383,58 @@ button {
   font-size: 40px;
   margin-bottom: 5px;
   text-decoration: underline;
+}
+
+/* Responsive design for AboutMe components */
+@media (max-width: 768px) {
+  .aboutMeBoxesContainer {
+    width: 95vw;
+    padding: 0 10px;
+  }
+  
+  .photoBox {
+    width: 280px;
+    height: 280px;
+  }
+  
+  .aboutMeSocial {
+    width: 280px;
+  }
+  
+  .aboutMeTextContainer {
+    width: 95%;
+    margin: 20px auto;
+  }
+  
+  .aboutMeTextBox {
+    width: calc(100% - 40px);
+    font-size: 16px;
+    padding: 15px;
+  }
+  
+  .aboutMeTextBox h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .photoBox {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .aboutMeSocial {
+    width: 250px;
+  }
+  
+  .aboutMeTextBox {
+    font-size: 14px;
+    padding: 10px;
+  }
+  
+  .aboutMeTextBox h2 {
+    font-size: 28px;
+  }
 }
 
 
