@@ -16,16 +16,16 @@ const MemoryGame = () => {
     // Create initial cards array and shuffle it
     const createShuffledCards = () => {
         const initialCards = [
-            {id : 0, image : '/blue-circle.png', isFlipped: false, isMatched: false},
-            {id : 1, image : '/green-triangle.png', isFlipped: false, isMatched: false},
-            {id : 2, image : '/red-square.png', isFlipped: false, isMatched: false},
-            {id : 3, image : '/yellow-star.png', isFlipped: false, isMatched: false},
-            {id : 4, image : '/pink-heart.png', isFlipped: false, isMatched: false},
-            {id : 5, image : '/blue-circle.png', isFlipped: false, isMatched: false}, 
-            {id : 6, image : '/green-triangle.png', isFlipped: false, isMatched: false}, 
-            {id : 7, image : '/red-square.png', isFlipped: false, isMatched: false}, 
-            {id : 8, image : '/yellow-star.png', isFlipped: false, isMatched: false}, 
-            {id : 9, image : '/pink-heart.png', isFlipped: false, isMatched: false}
+            {id : 0, image : `${process.env.PUBLIC_URL}/blue-circle.png`, isFlipped: false, isMatched: false},
+            {id : 1, image : `${process.env.PUBLIC_URL}/green-triangle.png`, isFlipped: false, isMatched: false},
+            {id : 2, image : `${process.env.PUBLIC_URL}/red-square.png`, isFlipped: false, isMatched: false},
+            {id : 3, image : `${process.env.PUBLIC_URL}/yellow-star.png`, isFlipped: false, isMatched: false},
+            {id : 4, image : `${process.env.PUBLIC_URL}/pink-heart.png`, isFlipped: false, isMatched: false},
+            {id : 5, image : `${process.env.PUBLIC_URL}/blue-circle.png`, isFlipped: false, isMatched: false}, 
+            {id : 6, image : `${process.env.PUBLIC_URL}/green-triangle.png`, isFlipped: false, isMatched: false}, 
+            {id : 7, image : `${process.env.PUBLIC_URL}/red-square.png`, isFlipped: false, isMatched: false}, 
+            {id : 8, image : `${process.env.PUBLIC_URL}/yellow-star.png`, isFlipped: false, isMatched: false}, 
+            {id : 9, image : `${process.env.PUBLIC_URL}/pink-heart.png`, isFlipped: false, isMatched: false}
         ];
         return shuffleArray(initialCards);
     };
@@ -153,7 +153,7 @@ const MemoryGame = () => {
                             className={card.isMatched ? 'matched' : ''}
                         />
                     ) : (
-                        <img src="/card-back.png" alt="Card back" className="card-back" />
+                        <img src={`${process.env.PUBLIC_URL}/card-back.png`} alt="Card back" className="card-back" />
                     )}
                 </div>
             ))}

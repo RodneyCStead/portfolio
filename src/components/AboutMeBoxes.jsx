@@ -4,14 +4,14 @@ const AboutMeBoxes = () => {
   return (
     <div className = "aboutMeBoxesContainer">
         <div className = "photoBox">
-          <img src="profilepic.jpg" alt="A photo of me" />
+          <img src={`${process.env.PUBLIC_URL}/profilepic.jpg`} alt="A photo of me" />
         </div>
         <div className = "aboutMeSocial">
           <a href = "https://github.com/RodneyCStead">
-            <img src = "github.svg" alt="" />
+            <img src={`${process.env.PUBLIC_URL}/github.svg`} alt="" />
           </a>
           <a href = "https://www.linkedin.com/in/rodney-c-stead-5b70672a9/">
-            <img src = "linkedin.svg" alt="" />
+            <img src={`${process.env.PUBLIC_URL}/linkedin.svg`} alt="" />
           </a>
         </div>
         <div className = "aboutMeTextContainer">
