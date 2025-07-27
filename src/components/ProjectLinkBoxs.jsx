@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 
 function ProjectLinkBoxs() {
   const projects = [
-    { title: 'Digital Clock', image: 'clock.webp', link: '/clock' },
-    { title: 'BitCoin Tracker', image: 'Bitcoin.svg.png', link: '/bitcoin' },
-    { title: 'Official NL Quiz', image: 'NL.jpg', link: '/NLQuiz' },
-    { title: 'My Github', image: 'GitHub-logo.png', link: 'https://github.com/RodneyCStead' },
+    { title: 'Digital Clock', image: '/clock.webp', link: '/clock' },
+    { title: 'Memory Card Game', image: '/memory-game-image.png', link: '/memory-card-game' },
+    { title: 'Official NL Quiz', image: '/NL.jpg', link: '/NLQuiz' },
+    { title: 'My Github', image: '/GitHub-logo.png', link: 'https://github.com/RodneyCStead' },
   ];
 
   return (

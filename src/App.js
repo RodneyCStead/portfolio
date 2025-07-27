@@ -4,7 +4,7 @@ import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import DigitalClock from './components/DigitalClock';
 import MyProjectsBar from './components/MyProjectsBar';
 import ProjectLinkBoxs from './components/ProjectLinkBoxs';
-import BitcoinTracker from './components/BitcoinTracker';
+import MemoryGame from './components/MemoryCardGame';
 import AboutMeBar from './components/AboutMeBar';
 import NLQuiz from './components/NLQuiz';
 import AboutMeBoxes from './components/AboutMeBoxes';
@@ -47,12 +47,11 @@ function App() {
             } 
           ></Route>
           <Route 
-            path = "/bitcoin" 
+            path = "/memory-card-game" 
             element={
               <div>
                 <MyProjectsBar />
-                <BitcoinTracker />
-
+                <MemoryGame />
               </div>
             }
           ></Route> 
